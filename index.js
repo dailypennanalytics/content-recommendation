@@ -103,6 +103,7 @@ recommendArticles('/article/2022/09/fossil-free-penn-uc-townhomes-encampment-tea
     for(let i = 0; i < res.length; i++) {
        console.log(res[i].slug)
        console.log(res[i].score)
+       console.log(res[i].hits)
     }
 })
 
