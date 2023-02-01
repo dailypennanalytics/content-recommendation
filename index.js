@@ -65,7 +65,7 @@ const recommendArticles = async (articleURL, sections) => {
     let data = [];
     const origin = nlp.readDoc(article.content).tokens().out(its.value, as.bow)
     for (let i = 0; i < tags.length; i++) {
-        const articles = await querySection(tagsFiltered[i], 1, 100);
+        const articles = await querySection(tagsFiltered[i], 1, 50);
         for (const item of articles) {
             if (item.slug == article.slug) {
                 continue;
